@@ -6,6 +6,9 @@ class genre(models.Model):
     name = models.CharField(max_length=255)
 
 
+    def __str__(self):
+        return self.name
+
 class movies(models.Model):
     title = models.CharField(max_length=255)
     release_year = models.IntegerField()
